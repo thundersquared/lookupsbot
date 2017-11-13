@@ -1,0 +1,16 @@
+{
+  "name": "lookupsbot",
+  "version": "1.0.0",
+  "description": "Whois Telegram Bot",
+  "main": "bot.js",
+  "author": "Anatoli Nicolae",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "telegraf": "^3.15.3",
+    "werist": "^0.3.0"
+  },
+  "scripts": {
+    "start": "node bot.js"
+  }
+}
