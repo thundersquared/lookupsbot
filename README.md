@@ -32,13 +32,12 @@ The bot is written in Node.JS, relies on [telegraf](https://github.com/telegraf/
 ## Config vars
 | Block    | Var      | Required |
 | -------- | -------- | -------- |
-| telegram | token    | *Yes*    |
+| telegram | token    | **Yes**  |
 | telegram | username | No       |
 | mysql    | host     | No       |
 | mysql    | database | No       |
 | mysql    | user     | No       |
 | mysql    | password | No       |
-| -------- | -------- | -------- |
 
 
 ## License
