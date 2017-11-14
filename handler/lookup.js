@@ -50,13 +50,12 @@ const lookup = (ctx, domain) => {
       if (ctx.session) {
         whois += `\n\nLookup #${ctx.session.lookups}`
       }
+
+      whois = `<pre>${whois}</pre>`
         
       return ctx.reply(whois, {
         disable_web_page_preview: true,
-        parse_mode: 'Markdown',
-        reply_markup: Extra.markup(
-          Markup.keyboard(['Coke', 'Pepsi'])
-        )
+        parse_mode: 'HTML'
       })
     }
   })
