@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "Whois Telegram Bot",
   "main": "bot.js",
-  "author": "Anatoli Nicolae",
+  "author": "thundersquared (https://thundersquared.com)",
   "license": "MIT",
-  "private": true,
   "dependencies": {
     "is-domain-name": "^1.0.1",
     "is-http-url": "^2.0.0",

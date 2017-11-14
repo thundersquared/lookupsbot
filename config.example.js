@@ -6,8 +6,8 @@ const config = {
     password: 'root'
   },
   telegram: {
-  	username: 'lookupsbot',
-  	token: 'your:token'
+    username: 'lookupsbot',
+    token: 'your:token'
   }
 }
 

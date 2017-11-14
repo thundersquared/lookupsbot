@@ -1,10 +1,9 @@
-const url = require('url')
-const util = require('util')
-const Extra = require('telegraf/extra')
-const Markup = require('telegraf/markup')
-const werist = require('werist')
-const isDomainName = require('is-domain-name')
-const isHttpUrl = require('is-http-url')
+const url           = require('url')
+const Extra         = require('telegraf/extra')
+const Markup        = require('telegraf/markup')
+const werist        = require('werist')
+const isDomainName  = require('is-domain-name')
+const isHttpUrl     = require('is-http-url')
 
 // Session pre-checks
 const session = ctx => {
@@ -24,12 +23,14 @@ const check = ctx => {
       let query = url.parse(domain)
       domain = query.hostname
     }
-    
+
     if (isDomainName(domain)) {
       if (ctx.session) {
         ctx.session.lookups++
       }
       return lookup(ctx, domain)
+    } else {
+      return ctx.reply('The text above does not appear to be a valid domain name.')
     }
   }
 
@@ -50,9 +51,9 @@ const lookup = (ctx, domain) => {
       whois = `<pre>${whois}</pre>`
 
       if (ctx.session) {
-        whois += `\n\nLookup <strong>#${ctx.session.lookups}</strong>`
+        whois += `\n\nLookup #${ctx.session.lookups}: <strong>${domain}</strong>`
       }
-        
+
       return ctx.reply(whois, {
         disable_web_page_preview: true,
         parse_mode: 'HTML'
