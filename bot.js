@@ -29,13 +29,14 @@ bot.use(limiter.middleware())
 
 // Start command
 bot.start((ctx) => {
-  console.log('started:', ctx.from.id)
-  return ctx.reply('Welcome!')
+  return ctx.reply('Welcome! Start by having a look at /help 😉')
 })
 
 // Start command
 bot.command('help', (ctx) => ctx.reply(`Lookups bot is a tool to query registrars for WHOIS info regarding domains.
+
 In order to get a domain WHOIS you have to simply send a text message with *the domain name*. E.g.: x.com
+
 Note that there is a *10 lookup requests limit* every 5 minutes.`, {
   parse_mode: 'Markdown'
 }))
