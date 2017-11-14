@@ -21,7 +21,7 @@ if (config.mysql && config.mysql.host) {
 
 // Limit lookups
 const limiter = new RateLimit({
-  window: 60 * 60 * 1000,
+  window: 5 * 60 * 1000,
   limit: 10,
   onLimitExceeded: (ctx, next) => ctx.reply('Rate limit exceeded')
 })
@@ -32,6 +32,13 @@ bot.start((ctx) => {
   console.log('started:', ctx.from.id)
   return ctx.reply('Welcome!')
 })
+
+// Start command
+bot.command('help', (ctx) => ctx.reply(`Lookups bot is a tool to query registrars for WHOIS info regarding domains.
+In order to get a domain WHOIS you have to simply send a text message with *the domain name*. E.g.: x.com
+Note that there is a *10 lookup requests limit* every 5 minutes.`, {
+  parse_mode: 'Markdown'
+}))
 
 // Generic message with lookup handler
 bot.on('text', message)
