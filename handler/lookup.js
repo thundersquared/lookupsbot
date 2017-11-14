@@ -47,11 +47,11 @@ const lookup = (ctx, domain) => {
     if (data) {
       let whois = data.split('<<<')[0]
 
-      if (ctx.session) {
-        whois += `\n\nLookup #${ctx.session.lookups}`
-      }
-
       whois = `<pre>${whois}</pre>`
+
+      if (ctx.session) {
+        whois += `\n\nLookup <strong>#${ctx.session.lookups}</strong>`
+      }
         
       return ctx.reply(whois, {
         disable_web_page_preview: true,
