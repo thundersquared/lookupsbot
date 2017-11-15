@@ -9,10 +9,10 @@ const isHttpUrl     = require('is-http-url')
 const check = ctx => {
   if (ctx.message.text) {
     let domain
-    
+
     if (typeof ctx.state.command !== 'undefined')
       domain = ctx.state.command.args
-    else 
+    else
       domain = ctx.message.text
 
     if (isHttpUrl(domain)) {
@@ -24,6 +24,9 @@ const check = ctx => {
       if (ctx.session) {
         ctx.session.lookups++
       }
+
+      ctx.replyWithChatAction('typing')
+
       return lookup(ctx, domain)
     } else {
       if (ctx.message.chat.type !== 'group' || ctx.message.chat.type !== 'supergroup') {
