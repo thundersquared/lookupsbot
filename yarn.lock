@@ -12,6 +12,12 @@
   version "8.0.51"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.51.tgz#b31d716fb8d58eeb95c068a039b9b6292817d5fb"
 
+argparse@^1.0.7:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/argparse/-/argparse-1.0.9.tgz#73d83bc263f86e97f8cc4f6bae1b0e90a7d22c86"
+  dependencies:
+    sprintf-js "~1.0.2"
+
 bignumber.js@4.0.4:
   version "4.0.4"
   resolved "https://registry.yarnpkg.com/bignumber.js/-/bignumber.js-4.0.4.tgz#7c40f5abcd2d6623ab7b99682ee7db81b11889a4"
@@ -23,6 +29,10 @@ bindings@^1.2.1:
 bluebird@^3.5.0:
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.1.tgz#d9551f9de98f1fcda1e683d17ee91a0602ee2eb9"
+
+compile-template@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/compile-template/-/compile-template-0.3.1.tgz#e581a08385c792609408d448187a5eaaf334b6b0"
 
 core-util-is@~1.0.0:
   version "1.0.2"
@@ -52,6 +62,10 @@ encoding@^0.1.11:
   resolved "https://registry.yarnpkg.com/encoding/-/encoding-0.1.12.tgz#538b66f3ee62cd1ab51ec323829d1f9480c74beb"
   dependencies:
     iconv-lite "~0.4.13"
+
+esprima@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/esprima/-/esprima-4.0.0.tgz#4499eddcd1110e0b218bacf2fa7f7f59f55ca804"
 
 iconv-lite@~0.4.13:
   version "0.4.19"
@@ -101,6 +115,13 @@ is-stream@^1.0.1:
 isarray@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/isarray/-/isarray-1.0.0.tgz#bb935d48582cba168c06834957a54a3e07124f11"
+
+js-yaml@^3.6.1:
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.10.0.tgz#2e78441646bd4682e963f22b6e92823c309c62dc"
+  dependencies:
+    argparse "^1.0.7"
+    esprima "^4.0.0"
 
 jsbn@0.1.0:
   version "0.1.0"
@@ -205,6 +226,10 @@ sprintf-js@^1.0.3:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.1.1.tgz#36be78320afe5801f6cea3ee78b6e5aab940ea0c"
 
+sprintf-js@~1.0.2:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
+
 sqlstring@2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/sqlstring/-/sqlstring-2.3.0.tgz#525b8a4fd26d6f71aa61e822a6caf976d31ad2a8"
@@ -214,6 +239,20 @@ string_decoder@~1.0.3:
   resolved "https://registry.yarnpkg.com/string_decoder/-/string_decoder-1.0.3.tgz#0fc67d7c141825de94282dd536bec6b9bce860ab"
   dependencies:
     safe-buffer "~5.1.0"
+
+telegraf-command-parts@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/telegraf-command-parts/-/telegraf-command-parts-1.0.3.tgz#d0e078d10ce3f68469b529e5ea3a76e42d5788b3"
+  dependencies:
+    telegraf "^3.1.0"
+
+telegraf-i18n@^6.0.4:
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/telegraf-i18n/-/telegraf-i18n-6.0.4.tgz#ef1c53b6060713327539d85d9fe58ab6bdaddb00"
+  dependencies:
+    compile-template "^0.3.1"
+    debug "^3.0.0"
+    js-yaml "^3.6.1"
 
 telegraf-ratelimit@^1.1.0:
   version "1.1.0"
@@ -228,7 +267,7 @@ telegraf-session-mysql@^5.1.0:
     debug "^2.2.0"
     promise-mysql "^3.0.0"
 
-telegraf@^3.15.3:
+telegraf@^3.1.0, telegraf@^3.15.3:
   version "3.15.3"
   resolved "https://registry.yarnpkg.com/telegraf/-/telegraf-3.15.3.tgz#3cd283d7da861800a845da727fe903a1ba28f3d2"
   dependencies:

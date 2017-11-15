@@ -1,0 +1,17 @@
+commands:
+  start: Welcome! Start by having a look at /help 😉
+  help: |
+    Lookups bot is a tool to query registrars for WHOIS info regarding domains.
+    
+    In order to get a domain WHOIS you have to simply send a text message with *the domain name*. E.g.: x.com
+    
+    Note that there is a *10 lookup requests limit* every 5 minutes.
+  lang:
+    info: Your current language is set to ${language}!
+    changed: Awesome! You've changed the language to ${language}!
+rate:
+  limit: Rate limit exceeded
+  lookup: "\n\nLookup #${lookups}: <strong>${domain}</strong>"
+errors:
+  domain: The text above does not appear to be a valid domain name.
+  whois: Something went wrong and I could not fetch whois data.

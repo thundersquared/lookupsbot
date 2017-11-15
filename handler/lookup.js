@@ -5,19 +5,15 @@ const werist        = require('werist')
 const isDomainName  = require('is-domain-name')
 const isHttpUrl     = require('is-http-url')
 
-// Session pre-checks
-const session = ctx => {
-  if (ctx.session) {
-    ctx.session.lookups = ctx.session.lookups || 0
-  }
-
-  return check(ctx)
-}
-
 // Domain checks
 const check = ctx => {
   if (ctx.message.text) {
-    let domain = ctx.message.text
+    let domain
+    
+    if (typeof ctx.state.command !== 'undefined')
+      domain = ctx.state.command.args
+    else 
+      domain = ctx.message.text
 
     if (isHttpUrl(domain)) {
       let query = url.parse(domain)
@@ -30,7 +26,9 @@ const check = ctx => {
       }
       return lookup(ctx, domain)
     } else {
-      return ctx.reply('The text above does not appear to be a valid domain name.')
+      if (ctx.message.chat.type !== 'group' || ctx.message.chat.type !== 'supergroup') {
+        return ctx.reply(ctx.i18n.t('errors.domain'))
+      }
     }
   }
 
@@ -42,7 +40,7 @@ const lookup = (ctx, domain) => {
   werist.lookup(domain, (err, data) => {
     if (err) {
       console.error(err)
-      return ctx.reply('Something went wrong and I could not fetch whois data.')
+      return ctx.reply(ctx.i18n.t('errors.whois'))
     }
 
     if (data) {
@@ -51,7 +49,10 @@ const lookup = (ctx, domain) => {
       whois = `<pre>${whois}</pre>`
 
       if (ctx.session) {
-        whois += `\n\nLookup #${ctx.session.lookups}: <strong>${domain}</strong>`
+        whois += ctx.i18n.t('rate.lookup', {
+          lookups: ctx.session.lookups,
+          domain: domain
+        })
       }
 
       return ctx.reply(whois, {
@@ -62,4 +63,4 @@ const lookup = (ctx, domain) => {
   })
 }
 
-module.exports = session
+module.exports = check

@@ -1,0 +1,17 @@
+commands:
+  start: Ciao! Inizia dando un'occhiata a /help 😉
+  help: |
+    Lookups bot è uno strumento per interrogare i registrar sui dati WHOIS dei domini.
+    
+    Per ottenerei i dati WHOIS di un dominio devi semplicemente inviare *il nome del dominio*. E.g.: x.com
+    
+    Nota che esiste un *limite di 10 richieste di lookup* ogni 5 minuti.
+  lang:
+    info: La lingua corrente è ${language}.
+    changed: Ottimo! Hai cambiato lingua a ${language}.
+rate:
+  limit: Limite richieste superato
+  lookup: "\n\nLookup #${lookups}: <strong>${domain}</strong>"
+errors:
+  domain: Il testo inviato non sembra essere un dominio valio.
+  whois: Qualcosa è andato storto e non sono riuscito ad ottenere i dati WHOIS.
