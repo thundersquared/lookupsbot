@@ -49,8 +49,6 @@ bot.use(limiter.middleware())
 bot.use(i18n.middleware())
 bot.use(commandParts())
 bot.use((ctx, next) => {
-  console.log('Init: ' + ctx.session.lang)
-
   ctx.session.lookups = ctx.session.lookups || 0
   ctx.session.limit = ctx.session.limit || 0
   ctx.session.lang = ctx.session.lang || 'en'
