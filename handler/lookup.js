@@ -10,10 +10,13 @@ const check = ctx => {
   if (ctx.message.text) {
     let domain
 
-    if (typeof ctx.state.command !== 'undefined')
-      domain = ctx.state.command.args
-    else
+    if (typeof ctx.state.command !== 'undefined') {
+      if (ctx.state.command.command === 'lookup') {
+        domain = ctx.state.command.args
+      }
+    } else {
       domain = ctx.message.text
+    }
 
     if (isHttpUrl(domain)) {
       let query = url.parse(domain)

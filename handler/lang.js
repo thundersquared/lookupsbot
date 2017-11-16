@@ -12,6 +12,8 @@ const languages = [
 ]
 
 const command = ctx => {
+  if (ctx.state.command.command === 'lang') return
+
   let lang = ctx.state.command.args
 
   if (languages.find(e => e.code === lang)) {
