@@ -285,9 +285,9 @@ util-deprecate@^1.0.2, util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
 
-werist@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/werist/-/werist-0.3.0.tgz#59f4262011ca110e4cd0dd8c58325b7b310a9d32"
+werist@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/werist/-/werist-0.3.1.tgz#559767635587ae0b7929bcbc290cb7a43f3920c2"
   dependencies:
     detect-character-encoding "0.5.1"
     iconv "2.3.0"
