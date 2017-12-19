@@ -267,9 +267,17 @@ telegraf-session-mysql@^5.1.0:
     debug "^2.2.0"
     promise-mysql "^3.0.0"
 
-telegraf@^3.1.0, telegraf@^3.15.3:
+telegraf@^3.1.0:
   version "3.15.3"
   resolved "https://registry.yarnpkg.com/telegraf/-/telegraf-3.15.3.tgz#3cd283d7da861800a845da727fe903a1ba28f3d2"
+  dependencies:
+    debug "^3.0.0"
+    node-fetch "^1.6.3"
+    sandwich-stream "^1.0.0"
+
+telegraf@^3.17.2:
+  version "3.17.2"
+  resolved "https://registry.yarnpkg.com/telegraf/-/telegraf-3.17.2.tgz#380f2ebcd11202d68a6b7675f491df30162af614"
   dependencies:
     debug "^3.0.0"
     node-fetch "^1.6.3"
