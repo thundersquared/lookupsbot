@@ -8,7 +8,7 @@
   "dependencies": {
     "is-domain-name": "^1.0.1",
     "is-http-url": "^2.0.0",
-    "telegraf": "^3.15.3",
+    "telegraf": "^3.17.2",
     "telegraf-command-parts": "^1.0.3",
     "telegraf-i18n": "^6.0.4",
     "telegraf-ratelimit": "^1.1.0",
