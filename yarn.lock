@@ -275,9 +275,9 @@ telegraf@^3.1.0:
     node-fetch "^1.6.3"
     sandwich-stream "^1.0.0"
 
-telegraf@^3.17.5:
-  version "3.17.5"
-  resolved "https://registry.yarnpkg.com/telegraf/-/telegraf-3.17.5.tgz#80c887847ce853385be217c43f9bc7dde170ddcd"
+telegraf@^3.17.7:
+  version "3.17.7"
+  resolved "https://registry.yarnpkg.com/telegraf/-/telegraf-3.17.7.tgz#04dd5ea097c1479abc91625c848f2f0ed2dccaf1"
   dependencies:
     debug "^3.0.0"
     node-fetch "^1.6.3"
