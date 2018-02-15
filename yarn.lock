@@ -171,6 +171,10 @@ node-fetch@^1.6.3:
     encoding "^0.1.11"
     is-stream "^1.0.1"
 
+node-fetch@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.0.0.tgz#982bba43ecd4f2922a29cc186a6bbb0bb73fcba6"
+
 process-nextick-args@~1.0.6:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-1.0.7.tgz#150e20b756590ad3f91093f25a4f2ad8bff30ba3"
@@ -275,12 +279,12 @@ telegraf@^3.1.0:
     node-fetch "^1.6.3"
     sandwich-stream "^1.0.0"
 
-telegraf@^3.17.5:
-  version "3.17.5"
-  resolved "https://registry.yarnpkg.com/telegraf/-/telegraf-3.17.5.tgz#80c887847ce853385be217c43f9bc7dde170ddcd"
+telegraf@^3.18.0:
+  version "3.18.0"
+  resolved "https://registry.yarnpkg.com/telegraf/-/telegraf-3.18.0.tgz#b11ecbabd638783d786b8b0a5be12b49464ef69d"
   dependencies:
     debug "^3.0.0"
-    node-fetch "^1.6.3"
+    node-fetch "^2.0.0"
     sandwich-stream "^1.0.0"
 
 tldjs@2.2.0:
