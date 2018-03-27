@@ -1,11 +1,14 @@
 commands:
   start: Ciao! Inizia dando un'occhiata a /help 😉
   help: |
-    Lookups bot è uno strumento per interrogare i registrar sui dati WHOIS dei domini.
-    
+    Sono un 🤖 che interroga i registrar riguardo ai dati WHOIS di domini.
+
     Per ottenerei i dati WHOIS di un dominio devi semplicemente inviare *il nome del dominio*. E.g.: x.com
-    
-    Nota che esiste un *limite di 10 richieste di lookup* ogni 5 minuti.
+
+    Nota che c'è un *limite di 10 richieste di lookup* ogni 5 minuti.
+
+    Sono stato fatto a thundersquared.com ⚡️ e sono open source❤️!
+    github.com/thundersquared/lookupsbot
   lang:
     info: La lingua corrente è ${language}.
     changed: Ottimo! Hai cambiato lingua a ${language}.
