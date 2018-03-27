@@ -1,6 +1,6 @@
 {
   "name": "lookupsbot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Whois Telegram Bot",
   "main": "bot.js",
   "author": "thundersquared (https://thundersquared.com)",

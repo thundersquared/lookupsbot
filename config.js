@@ -3,14 +3,14 @@ const fs   = require('fs')
 
 const config = {
   mysql: {
-    host: null,
-    database: null,
-    user: null,
-    password: null
+    host: process.env.DB_HOST,
+    database: process.env.DB_NAME,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASS
   },
   telegram: {
-    username: null,
-    token: null
+    username: process.env.BOT_NAME,
+    token: process.env.BOT_TOKEN
   }
 }
 
