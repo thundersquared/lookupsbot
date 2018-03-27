@@ -9,6 +9,7 @@ commands:
 
     I was made at thundersquared.com ⚡️ and I’m open source❤️!
     github.com/thundersquared/lookupsbot
+
   lang:
     info: Your current language is set to ${language}!
     changed: Awesome! You've changed the language to ${language}!
