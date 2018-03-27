@@ -17,6 +17,7 @@
   },
   "scripts": {
     "dev": "NODE_ENV=dev node bot.js",
-    "prod": "NODE_ENV=prod node bot.js"
+    "prod": "NODE_ENV=prod node bot.js",
+    "start": "NODE_ENV=prod node bot.js"
   }
 }
