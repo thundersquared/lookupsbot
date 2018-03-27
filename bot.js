@@ -53,9 +53,9 @@ bot.use((ctx, next) => {
     ctx.session.lookups = ctx.session.lookups || 0
     ctx.session.limit = ctx.session.limit || 0
     ctx.session.lang = ctx.session.lang || 'en'
-  }
 
-  ctx.i18n.locale(ctx.session.lang)
+    ctx.i18n.locale(ctx.session.lang)
+  }
 
   return next()
 })
