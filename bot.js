@@ -31,7 +31,7 @@ const limiter = new RateLimit({
   limit: 10,
   onLimitExceeded: (ctx, next) => {
     // ctx.session.limit = ctx.session.limit || 0
-    // if (ctx.session.limit > 10) { 
+    // if (ctx.session.limit > 10) {
       return ctx.reply(ctx.i18n.t('rate.limit'))
     // }
   }
@@ -45,7 +45,7 @@ const i18n = new TelegrafI18n({
 })
 
 // Apply middlewares
-bot.use(limiter.middleware())
+bot.use(limiter)
 bot.use(i18n.middleware())
 bot.use(commandParts())
 bot.use((ctx, next) => {
