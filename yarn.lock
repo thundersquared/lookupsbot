@@ -44,7 +44,7 @@ debug@^2.2.0:
   dependencies:
     ms "2.0.0"
 
-debug@^3.0.0:
+debug@^3.0.0, debug@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/debug/-/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
   dependencies:
@@ -57,19 +57,9 @@ detect-character-encoding@0.5.1:
     bindings "^1.2.1"
     nan "^2.0.9"
 
-encoding@^0.1.11:
-  version "0.1.12"
-  resolved "https://registry.yarnpkg.com/encoding/-/encoding-0.1.12.tgz#538b66f3ee62cd1ab51ec323829d1f9480c74beb"
-  dependencies:
-    iconv-lite "~0.4.13"
-
 esprima@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/esprima/-/esprima-4.0.0.tgz#4499eddcd1110e0b218bacf2fa7f7f59f55ca804"
-
-iconv-lite@~0.4.13:
-  version "0.4.19"
-  resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.19.tgz#f7468f60135f5e5dad3399c0a81be9a1603a082b"
 
 iconv@2.3.0:
   version "2.3.0"
@@ -107,10 +97,6 @@ is-http-url@^2.0.0:
   resolved "https://registry.yarnpkg.com/is-http-url/-/is-http-url-2.0.0.tgz#f7e403d95c5f0121f87046fbed52fd66540c095c"
   dependencies:
     is-domain-name "^1.0.0"
-
-is-stream@^1.0.1:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/is-stream/-/is-stream-1.1.0.tgz#12d4a3dd4e68e0b79ceb8dbc84173ae80d91ca44"
 
 isarray@~1.0.0:
   version "1.0.0"
@@ -164,12 +150,9 @@ nan@^2.0.9, nan@^2.3.5:
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.7.0.tgz#d95bf721ec877e08db276ed3fc6eb78f9083ad46"
 
-node-fetch@^1.6.3:
-  version "1.7.3"
-  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-1.7.3.tgz#980f6f72d85211a5347c6b2bc18c5b84c3eb47ef"
-  dependencies:
-    encoding "^0.1.11"
-    is-stream "^1.0.1"
+node-fetch@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.0.0.tgz#982bba43ecd4f2922a29cc186a6bbb0bb73fcba6"
 
 process-nextick-args@~1.0.6:
   version "1.0.7"
@@ -222,11 +205,7 @@ socks@1.1.10:
     ip "^1.1.4"
     smart-buffer "^1.0.13"
 
-sprintf-js@^1.0.3:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.1.1.tgz#36be78320afe5801f6cea3ee78b6e5aab940ea0c"
-
-sprintf-js@~1.0.2:
+sprintf-js@^1.0.3, sprintf-js@~1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
 
@@ -254,11 +233,11 @@ telegraf-i18n@^6.0.4:
     debug "^3.0.0"
     js-yaml "^3.6.1"
 
-telegraf-ratelimit@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/telegraf-ratelimit/-/telegraf-ratelimit-1.1.0.tgz#6ccd41ffceb9893365f4c4fc5659a471f3bd402c"
+telegraf-ratelimit@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/telegraf-ratelimit/-/telegraf-ratelimit-2.0.0.tgz#64c72d77913901f92c690cd9078b1f724ef4268a"
   dependencies:
-    debug "^2.2.0"
+    debug "^3.1.0"
 
 telegraf-session-mysql@^5.1.0:
   version "5.1.0"
@@ -267,12 +246,12 @@ telegraf-session-mysql@^5.1.0:
     debug "^2.2.0"
     promise-mysql "^3.0.0"
 
-telegraf@^3.1.0, telegraf@^3.15.3:
-  version "3.15.3"
-  resolved "https://registry.yarnpkg.com/telegraf/-/telegraf-3.15.3.tgz#3cd283d7da861800a845da727fe903a1ba28f3d2"
+telegraf@^3.1.0, telegraf@^3.20.0:
+  version "3.20.0"
+  resolved "https://registry.yarnpkg.com/telegraf/-/telegraf-3.20.0.tgz#b45f35209e505e6dd1cbeff94c5d85f02db52f5d"
   dependencies:
     debug "^3.0.0"
-    node-fetch "^1.6.3"
+    node-fetch "^2.0.0"
     sandwich-stream "^1.0.0"
 
 tldjs@2.2.0:
@@ -285,9 +264,9 @@ util-deprecate@^1.0.2, util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
 
-werist@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/werist/-/werist-0.3.0.tgz#59f4262011ca110e4cd0dd8c58325b7b310a9d32"
+werist@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/werist/-/werist-0.3.1.tgz#559767635587ae0b7929bcbc290cb7a43f3920c2"
   dependencies:
     detect-character-encoding "0.5.1"
     iconv "2.3.0"
