@@ -26,7 +26,7 @@ bignumber.js@4.0.4:
   version "4.0.4"
   resolved "https://registry.yarnpkg.com/bignumber.js/-/bignumber.js-4.0.4.tgz#7c40f5abcd2d6623ab7b99682ee7db81b11889a4"
 
-bindings@^1.2.1:
+bindings@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/bindings/-/bindings-1.3.0.tgz#b346f6ecf6a95f5a815c5839fc7cdb22502f1ed7"
 
@@ -54,12 +54,12 @@ debug@^3.0.0, debug@^3.1.0:
   dependencies:
     ms "2.0.0"
 
-detect-character-encoding@0.5.1:
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/detect-character-encoding/-/detect-character-encoding-0.5.1.tgz#5273dbd470e9c7fc190cafa3e2430e50defb46fa"
+detect-character-encoding@0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/detect-character-encoding/-/detect-character-encoding-0.6.0.tgz#52cbce9ce3f94ee76aefbcd1154b461295e9615c"
   dependencies:
-    bindings "^1.2.1"
-    nan "^2.0.9"
+    bindings "^1.3.0"
+    nan "^2.10.0"
 
 esprima@^4.0.0:
   version "4.0.0"
@@ -75,20 +75,19 @@ inherits@~2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de"
 
-ip-address@5.8.8:
-  version "5.8.8"
-  resolved "https://registry.yarnpkg.com/ip-address/-/ip-address-5.8.8.tgz#5fd1f8f7465249fb7d2b3c1eec7b41d29d1f1b76"
+ip-address@5.8.9:
+  version "5.8.9"
+  resolved "https://registry.yarnpkg.com/ip-address/-/ip-address-5.8.9.tgz#6379277c23fc5adb20511e4d23ec2c1bde105dfd"
   dependencies:
-    jsbn "0.1.0"
+    jsbn "1.1.0"
     lodash.find "^4.6.0"
     lodash.max "^4.0.1"
     lodash.merge "^4.6.0"
     lodash.padstart "^4.6.1"
     lodash.repeat "^4.1.0"
-    sprintf-js "^1.0.3"
-    util-deprecate "^1.0.2"
+    sprintf-js "1.1.0"
 
-ip@^1.1.4:
+ip@^1.1.5:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/ip/-/ip-1.1.5.tgz#bdded70114290828c0a039e72ef25f5aaec4354a"
 
@@ -113,9 +112,9 @@ js-yaml@^3.6.1:
     argparse "^1.0.7"
     esprima "^4.0.0"
 
-jsbn@0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/jsbn/-/jsbn-0.1.0.tgz#650987da0dd74f4ebf5a11377a2aa2d273e97dfd"
+jsbn@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/jsbn/-/jsbn-1.1.0.tgz#b01307cb29b618a1ed26ec79e911f803c4da0040"
 
 lodash.find@^4.6.0:
   version "4.6.0"
@@ -150,7 +149,11 @@ mysql@^2.14.1:
     safe-buffer "5.1.1"
     sqlstring "2.3.0"
 
-nan@^2.0.9, nan@^2.3.5:
+nan@^2.10.0:
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/nan/-/nan-2.10.0.tgz#96d0cd610ebd58d4b4de9cc0c6828cda99c7548f"
+
+nan@^2.3.5:
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.7.0.tgz#d95bf721ec877e08db276ed3fc6eb78f9083ad46"
 
@@ -170,9 +173,9 @@ promise-mysql@^3.0.0:
     bluebird "^3.5.0"
     mysql "^2.14.1"
 
-punycode@2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.0.tgz#5f863edc89b96db09074bad7947bf09056ca4e7d"
+punycode@2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
 
 punycode@^1.4.1:
   version "1.4.1"
@@ -198,18 +201,22 @@ sandwich-stream@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/sandwich-stream/-/sandwich-stream-1.0.0.tgz#7830e45797b5933287f1f9b28f871907456262f2"
 
-smart-buffer@^1.0.13:
-  version "1.1.15"
-  resolved "https://registry.yarnpkg.com/smart-buffer/-/smart-buffer-1.1.15.tgz#7f114b5b65fab3e2a35aa775bb12f0d1c649bf16"
+smart-buffer@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/smart-buffer/-/smart-buffer-4.0.1.tgz#07ea1ca8d4db24eb4cac86537d7d18995221ace3"
 
-socks@1.1.10:
-  version "1.1.10"
-  resolved "https://registry.yarnpkg.com/socks/-/socks-1.1.10.tgz#5b8b7fc7c8f341c53ed056e929b7bf4de8ba7b5a"
+socks@2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/socks/-/socks-2.2.0.tgz#144985b3331ced3ab5ccbee640ab7cb7d43fdd1f"
   dependencies:
-    ip "^1.1.4"
-    smart-buffer "^1.0.13"
+    ip "^1.1.5"
+    smart-buffer "^4.0.1"
 
-sprintf-js@^1.0.3, sprintf-js@~1.0.2:
+sprintf-js@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.1.0.tgz#cffcaf702daf65ea39bb4e0fa2b299cec1a1be46"
+
+sprintf-js@~1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
 
@@ -265,9 +272,9 @@ telegram-typings@^3.6.0:
   version "3.6.1"
   resolved "https://registry.yarnpkg.com/telegram-typings/-/telegram-typings-3.6.1.tgz#1288d547f8694b61f1c01c2993e295f3114d9e25"
 
-tldjs@2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/tldjs/-/tldjs-2.2.0.tgz#816de9efa7440eacf3e2a10f8fd3d64198d01ff3"
+tldjs@2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/tldjs/-/tldjs-2.3.1.tgz#cf09c3eb5d7403a9e214b7d65f3cf9651c0ab039"
   dependencies:
     punycode "^1.4.1"
 
@@ -275,17 +282,17 @@ typescript@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.0.1.tgz#43738f29585d3a87575520a4b93ab6026ef11fdb"
 
-util-deprecate@^1.0.2, util-deprecate@~1.0.1:
+util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
 
-werist@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/werist/-/werist-0.3.1.tgz#559767635587ae0b7929bcbc290cb7a43f3920c2"
+werist@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/werist/-/werist-0.3.2.tgz#673caf110a2d371006fef63ef58a3a561d454de4"
   dependencies:
-    detect-character-encoding "0.5.1"
+    detect-character-encoding "0.6.0"
     iconv "2.3.0"
-    ip-address "5.8.8"
-    punycode "2.1.0"
-    socks "1.1.10"
-    tldjs "2.2.0"
+    ip-address "5.8.9"
+    punycode "2.1.1"
+    socks "2.2.0"
+    tldjs "2.3.1"
