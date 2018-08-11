@@ -225,9 +225,9 @@ telegraf-command-parts@^1.0.3:
   dependencies:
     telegraf "^3.1.0"
 
-telegraf-i18n@^6.1.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/telegraf-i18n/-/telegraf-i18n-6.1.0.tgz#f82362f9374548b95f224a4f265af3599fb86f02"
+telegraf-i18n@^6.1.1:
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/telegraf-i18n/-/telegraf-i18n-6.1.1.tgz#d57122be0d407f7f2974cb902acd7a55957e64c6"
   dependencies:
     compile-template "^0.3.1"
     debug "^3.0.0"
