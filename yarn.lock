@@ -54,6 +54,12 @@ debug@^3.0.0, debug@^3.1.0:
   dependencies:
     ms "2.0.0"
 
+debug@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.0.1.tgz#f9bb36d439b8d1f0dd52d8fb6b46e4ebb8c1cd5b"
+  dependencies:
+    ms "^2.1.1"
+
 detect-character-encoding@0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/detect-character-encoding/-/detect-character-encoding-0.6.0.tgz#52cbce9ce3f94ee76aefbcd1154b461295e9615c"
@@ -139,6 +145,10 @@ lodash.repeat@^4.1.0:
 ms@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
+
+ms@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.1.tgz#30a5864eb3ebb0a66f2ebe6d727af06a09d86e0a"
 
 mysql@^2.14.1:
   version "2.15.0"
@@ -236,12 +246,12 @@ telegraf-command-parts@^1.0.3:
   dependencies:
     telegraf "^3.1.0"
 
-telegraf-i18n@^6.1.1:
-  version "6.1.1"
-  resolved "https://registry.yarnpkg.com/telegraf-i18n/-/telegraf-i18n-6.1.1.tgz#d57122be0d407f7f2974cb902acd7a55957e64c6"
+telegraf-i18n@^6.3.0:
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/telegraf-i18n/-/telegraf-i18n-6.3.0.tgz#81d18456d05e4c993241c16d589e52439e576041"
   dependencies:
     compile-template "^0.3.1"
-    debug "^3.0.0"
+    debug "^4.0.1"
     js-yaml "^3.6.1"
 
 telegraf-ratelimit@^2.0.0:
