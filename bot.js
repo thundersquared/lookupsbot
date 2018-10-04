@@ -30,10 +30,7 @@ const limiter = new RateLimit({
   window: 5 * 60 * 1000,
   limit: 10,
   onLimitExceeded: (ctx, next) => {
-    // ctx.session.limit = ctx.session.limit || 0
-    // if (ctx.session.limit > 10) {
-      return ctx.reply(ctx.i18n.t('rate.limit'))
-    // }
+    return ctx.reply(ctx.i18n.t('rate.limit'))
   }
 })
 
