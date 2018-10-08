@@ -318,17 +318,16 @@ telegraf-session-mysql@^5.1.0:
     debug "^2.2.0"
     promise-mysql "^3.0.0"
 
-telegraf@^3.1.0, telegraf@^3.24.0:
-  version "3.24.0"
-  resolved "https://registry.yarnpkg.com/telegraf/-/telegraf-3.24.0.tgz#10bd3ef6771401dfbe93fba9c24b3cc75fdefe7b"
-  integrity sha512-BLbIidffj6Ot1Ti1J+qB81oa/rtIBLiNC8tfjFXj778BHpCMIS0rU+A3ynguHwCBwSW6E6nLCiCj6P9CEEdyhg==
+telegraf@^3.1.0, telegraf@^3.24.1:
+  version "3.24.1"
+  resolved "https://registry.yarnpkg.com/telegraf/-/telegraf-3.24.1.tgz#bfcfe326210ea9d341032a6e6910e36f4c25440c"
+  integrity sha512-+beVzq+fZ+kDpIWKM+MzxqIfHDYqYvklmDYrO2Kz7JsZaMsBcRAP9rvbyu9hpgwqDLaa4jrrGRVScaWTOiraNg==
   dependencies:
     "@types/node" "^10.1.2"
     debug "^4.0.1"
     node-fetch "^2.2.0"
     sandwich-stream "^1.0.0"
     telegram-typings "^3.6.0"
-    typescript "^3.0.1"
 
 telegram-typings@^3.6.0:
   version "3.6.1"
@@ -341,11 +340,6 @@ tldjs@2.3.1:
   integrity sha512-W/YVH/QczLUxVjnQhFC61Iq232NWu3TqDdO0S/MtXVz4xybejBov4ud+CIwN9aYqjOecEqIy0PscGkwpG9ZyTw==
   dependencies:
     punycode "^1.4.1"
-
-typescript@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.0.1.tgz#43738f29585d3a87575520a4b93ab6026ef11fdb"
-  integrity sha512-zQIMOmC+372pC/CCVLqnQ0zSBiY7HHodU7mpQdjiZddek4GMj31I3dUJ7gAs9o65X7mnRma6OokOkc6f9jjfBg==
 
 util-deprecate@~1.0.1:
   version "1.0.2"
