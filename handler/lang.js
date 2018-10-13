@@ -9,6 +9,10 @@ const languages = [
     code: 'it',
     name: 'Italiano'
   },
+  {
+    code: 'ru',
+    name: 'Русский'
+  },
 ]
 
 const command = ctx => {
