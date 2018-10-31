@@ -247,10 +247,10 @@ safe-buffer@5.1.1, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.1.tgz#893312af69b2123def71f57889001671eeb2c853"
   integrity sha512-kKvNJn6Mm93gAczWVJg7wH+wGYWNrDHdWvpUmHyEsgCtIwwo3bqPtV4tR5tuPaUhTOo/kvhVwd8XwwOllGYkbg==
 
-sandwich-stream@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/sandwich-stream/-/sandwich-stream-1.0.0.tgz#7830e45797b5933287f1f9b28f871907456262f2"
-  integrity sha1-eDDkV5e1kzKH8fmyj4cZB0ViYvI=
+sandwich-stream@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/sandwich-stream/-/sandwich-stream-2.0.1.tgz#71606fd182ec07ac41ecaf963f82eb6718aaf765"
+  integrity sha512-4sZmzmRVlzqskWCP1FKgUaoY0p3qH2Z0fCKyD/3AMF5iKindLmIulGW1iieM1ycMyh43rKjlYanFHRp7sJcq0Q==
 
 smart-buffer@^4.0.1:
   version "4.0.1"
@@ -318,17 +318,16 @@ telegraf-session-mysql@^5.1.0:
     debug "^2.2.0"
     promise-mysql "^3.0.0"
 
-telegraf@^3.1.0, telegraf@^3.24.0:
-  version "3.24.0"
-  resolved "https://registry.yarnpkg.com/telegraf/-/telegraf-3.24.0.tgz#10bd3ef6771401dfbe93fba9c24b3cc75fdefe7b"
-  integrity sha512-BLbIidffj6Ot1Ti1J+qB81oa/rtIBLiNC8tfjFXj778BHpCMIS0rU+A3ynguHwCBwSW6E6nLCiCj6P9CEEdyhg==
+telegraf@^3.1.0, telegraf@^3.25.0:
+  version "3.25.0"
+  resolved "https://registry.yarnpkg.com/telegraf/-/telegraf-3.25.0.tgz#f08e463584803c36462e22668ad1e1f362f1f253"
+  integrity sha512-W2L/9LIOndtzqgEnJPlDJS8Q/gwoRS/a7FvoV9kPhKwRWtJtiP8xhkr66GMbOhnB0RgSK6GMrgeZtXNzLn/bQg==
   dependencies:
     "@types/node" "^10.1.2"
     debug "^4.0.1"
     node-fetch "^2.2.0"
-    sandwich-stream "^1.0.0"
+    sandwich-stream "^2.0.1"
     telegram-typings "^3.6.0"
-    typescript "^3.0.1"
 
 telegram-typings@^3.6.0:
   version "3.6.1"
@@ -341,11 +340,6 @@ tldjs@2.3.1:
   integrity sha512-W/YVH/QczLUxVjnQhFC61Iq232NWu3TqDdO0S/MtXVz4xybejBov4ud+CIwN9aYqjOecEqIy0PscGkwpG9ZyTw==
   dependencies:
     punycode "^1.4.1"
-
-typescript@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.0.1.tgz#43738f29585d3a87575520a4b93ab6026ef11fdb"
-  integrity sha512-zQIMOmC+372pC/CCVLqnQ0zSBiY7HHodU7mpQdjiZddek4GMj31I3dUJ7gAs9o65X7mnRma6OokOkc6f9jjfBg==
 
 util-deprecate@~1.0.1:
   version "1.0.2"
