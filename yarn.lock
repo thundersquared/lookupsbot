@@ -313,10 +313,10 @@ telegraf-session-mysql@^5.1.0:
     debug "^2.2.0"
     promise-mysql "^3.0.0"
 
-telegraf@^3.1.0, telegraf@^3.26.0:
-  version "3.26.0"
-  resolved "https://registry.yarnpkg.com/telegraf/-/telegraf-3.26.0.tgz#6102280c7971431a8a8a96fe0502285cc1a223c9"
-  integrity sha512-mADDeKoSBbfcOntV0/78vyNNO59/eNQiY8V3xUfrxCOwZsDxtV0dkU53Zu7k7xPPddViLUzl3EENil97CDgbpw==
+telegraf@^3.1.0, telegraf@^3.27.1:
+  version "3.27.1"
+  resolved "https://registry.yarnpkg.com/telegraf/-/telegraf-3.27.1.tgz#67fbd87a6b4f414a204820f8cb30160e2078b39c"
+  integrity sha512-RQUnuNAEEWcLhRap81qwGUUqAy1KcvqANnA0G3pzZqFkhMe6LrTk5lVi9tdOaF0Ud/yOx5fdx0rNPYfiB27Z+w==
   dependencies:
     "@types/node" "^10.1.2"
     debug "^4.0.1"
