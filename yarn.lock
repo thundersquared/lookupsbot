@@ -9,10 +9,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/node@*", "@types/node@^10.1.2":
-  version "10.5.7"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.5.7.tgz#960d9feb3ade2233bcc9843c918d740b4f78a7cf"
-  integrity sha512-VkKcfuitP+Nc/TaTFH0B8qNmn+6NbI6crLkQonbedViVz7O2w8QV/GERPlkJ4bg42VGHiEWa31CoTOPs1q6z1w==
+"@types/node@*", "@types/node@^11.12.1":
+  version "11.13.4"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-11.13.4.tgz#f83ec3c3e05b174b7241fadeb6688267fe5b22ca"
+  integrity sha512-+rabAZZ3Yn7tF/XPGHupKIL5EcAbrLxnTr/hgQICxbeuAfWtT0UZSfULE+ndusckBItcv4o6ZeOJplQikVcLvQ==
 
 argparse@^1.0.7:
   version "1.0.9"
@@ -313,12 +313,12 @@ telegraf-session-mysql@^5.1.0:
     debug "^2.2.0"
     promise-mysql "^3.0.0"
 
-telegraf@^3.1.0, telegraf@^3.26.0:
-  version "3.26.0"
-  resolved "https://registry.yarnpkg.com/telegraf/-/telegraf-3.26.0.tgz#6102280c7971431a8a8a96fe0502285cc1a223c9"
-  integrity sha512-mADDeKoSBbfcOntV0/78vyNNO59/eNQiY8V3xUfrxCOwZsDxtV0dkU53Zu7k7xPPddViLUzl3EENil97CDgbpw==
+telegraf@^3.1.0, telegraf@^3.29.0:
+  version "3.29.0"
+  resolved "https://registry.yarnpkg.com/telegraf/-/telegraf-3.29.0.tgz#0655d02b9a2d72d53ff20787947aa10ad54a747c"
+  integrity sha512-zvlY2Wnls7D/sJDTD21tORR9S1Exe6NThUCvYhdhCoKx7+OOZlplSd4yhSZbRI4bViuFdyhxCE+IuWS/ZmAElg==
   dependencies:
-    "@types/node" "^10.1.2"
+    "@types/node" "^11.12.1"
     debug "^4.0.1"
     node-fetch "^2.2.0"
     sandwich-stream "^2.0.1"
