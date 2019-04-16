@@ -13,7 +13,7 @@
     "telegraf-i18n": "^6.4.0",
     "telegraf-ratelimit": "^2.0.0",
     "telegraf-session-mysql": "^5.1.0",
-    "werist": "^0.3.2"
+    "werist": "^0.3.3"
   },
   "scripts": {
     "dev": "NODE_ENV=dev node bot.js",
