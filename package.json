@@ -10,7 +10,7 @@
     "is-http-url": "^2.0.0",
     "telegraf": "^3.26.0",
     "telegraf-command-parts": "^1.0.3",
-    "telegraf-i18n": "^6.4.0",
+    "telegraf-i18n": "^6.6.0",
     "telegraf-ratelimit": "^2.0.0",
     "telegraf-session-mysql": "^5.1.0",
     "werist": "^0.3.2"
