@@ -9,7 +9,7 @@
   dependencies:
     "@types/node" "*"
 
-"@types/node@*", "@types/node@^13.1.0":
+"@types/node@*":
   version "13.5.0"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-13.5.0.tgz#4e498dbf355795a611a87ae5ef811a8660d42662"
   integrity sha512-Onhn+z72D2O2Pb2ql2xukJ55rglumsVo1H6Fmyi8mlU9SvKdBk/pUSUAiBY/d9bAOF7VVWajX3sths/+g6ZiAQ==
@@ -329,23 +329,17 @@ telegraf-session-mysql@^5.1.0:
     debug "^2.2.0"
     promise-mysql "^3.0.0"
 
-telegraf@^3.1.0, telegraf@^3.36.0:
-  version "3.36.0"
-  resolved "https://registry.yarnpkg.com/telegraf/-/telegraf-3.36.0.tgz#eab1160159df6033d3cb92ac990902523277822a"
-  integrity sha512-9o6AJKRiTm5vMWYI6WpTfBHzu4FMpWBNKxvnMxRds/cbMY9RnsVVjdi8i4bFFlfd+xbi73EbrnI3dybayryICA==
+telegraf@^3.1.0, telegraf@^3.39.0:
+  version "3.39.0"
+  resolved "https://registry.yarnpkg.com/telegraf/-/telegraf-3.39.0.tgz#32a7ed464c80802fe3177619d2a9c53413487850"
+  integrity sha512-6u5UyW2KpMS/hwC4DKLGlicK/rVSYCahPFgF14ioP6BzwcDwQlciHCB/oWguvxLJaYGrvY6crzLHfjupFTBPXw==
   dependencies:
-    "@types/node" "^13.1.0"
     debug "^4.0.1"
     minimist "^1.2.0"
     module-alias "^2.2.2"
     node-fetch "^2.2.0"
     sandwich-stream "^2.0.1"
-    telegram-typings "^3.6.0"
-
-telegram-typings@^3.6.0:
-  version "3.6.1"
-  resolved "https://registry.yarnpkg.com/telegram-typings/-/telegram-typings-3.6.1.tgz#1288d547f8694b61f1c01c2993e295f3114d9e25"
-  integrity sha512-njVv1EAhIZnmQVLocZEADYUyqA1WIXuVcDYlsp+mXua/XB0pxx+PKtMSPeZ/EE4wPWTw9h/hA9ASTT6yQelkiw==
+    typegram "^3.1.5"
 
 tldjs@2.3.1:
   version "2.3.1"
@@ -353,6 +347,11 @@ tldjs@2.3.1:
   integrity sha512-W/YVH/QczLUxVjnQhFC61Iq232NWu3TqDdO0S/MtXVz4xybejBov4ud+CIwN9aYqjOecEqIy0PscGkwpG9ZyTw==
   dependencies:
     punycode "^1.4.1"
+
+typegram@^3.1.5:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/typegram/-/typegram-3.4.0.tgz#ab3a7b4219d9d7d7210eb2e39759a242927e8035"
+  integrity sha512-GUE1LV3LJruTThJaUBUvTnaEpTswFhuxhEx9LaVLIA6WRw9CdPQmb87OIA0rCvoMSPBC8gZiHrrPqX9VJGDXwQ==
 
 util-deprecate@~1.0.1:
   version "1.0.2"
